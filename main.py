@@ -5,7 +5,7 @@ def main():
     parser = FlyerParser()
     html_text = parser.fetch_html()
 
-    hypermarket_names = parser.parse_flyers(html_text)
+    hypermarket_names = parser.parse_hypermarket_names(html_text)
     i=1
     for hypermarket in hypermarket_names:
         print(i, ".- ", hypermarket)

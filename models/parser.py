@@ -4,14 +4,14 @@ from typing import List
 from bs4 import BeautifulSoup
 
 class FlyerParser:
-    BASE_URL = "https://www.prospektmaschine.de/hypermarkte/"
+    BASE_URL = "https://www.prospektmaschine.de/"
 
     def fetch_html(self) -> str:
-        response = requests.get(self.BASE_URL)
+        response = requests.get(self.BASE_URL+"hypermarkte/")
         response.raise_for_status()
         return response.text
 
-    def parse_flyers(self, html: str) -> List[Flyer]:
+    def parse_hypermarket_names(self, html: str) -> List[Flyer]:
         soup = BeautifulSoup(html, "html.parser")
         hypermarket_names = []
 
@@ -21,8 +21,5 @@ class FlyerParser:
             a_tag = li.find("a")
             if a_tag and a_tag.text:
                 hypermarket_names.append(a_tag.text.strip())
-
-
-        # TODO: parsing logic
 
         return hypermarket_names
