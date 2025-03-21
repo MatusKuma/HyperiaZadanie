@@ -13,8 +13,16 @@ class FlyerParser:
 
     def parse_flyers(self, html: str) -> List[Flyer]:
         soup = BeautifulSoup(html, "html.parser")
-        flyers = []
+        hypermarket_names = []
+
+        list_of_hypermarkets = soup.find("ul", id="left-category-shops")
+              
+        for li in list_of_hypermarkets.find_all("li"):
+            a_tag = li.find("a")
+            if a_tag and a_tag.text:
+                hypermarket_names.append(a_tag.text.strip())
+
 
         # TODO: parsing logic
 
-        return flyers
+        return hypermarket_names
