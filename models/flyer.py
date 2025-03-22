@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-import datetime
+from datetime import datetime
 
 @dataclass
 class Flyer:
@@ -8,7 +8,8 @@ class Flyer:
     thumbnail: str = field(default="")
     valid_from: str = field(default="")
     valid_to: str = field(default="")
-    parsed_time: datetime.datetime = field(default_factory=datetime.datetime.now)
+    parsed_time: str = field(default="")
 
-    def __init__(self, shop_name: str):
-        self.shop_name = shop_name
+    def set_parsed_time(self):
+        """ Nastaví čas, keď sa leták parsuje. """
+        self.parsed_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

@@ -1,10 +1,6 @@
 import json
-from models.parser import FlyerParser
 
-def save_flyers_to_json():
-    parser = FlyerParser()
-    all_flyers = parser.parse_all_flyers()
-
+def save_flyers_to_json(all_flyers):
     output_flyers = []
 
     for shop_flyers in all_flyers:
@@ -12,7 +8,7 @@ def save_flyers_to_json():
             output_flyers.append({
                 "title": flyer.title,
                 "thumbnail": flyer.thumbnail,
-                "shop_name": flyer.shop_name,  
+                "shop_name": flyer.shop_name,
                 "valid_from": flyer.valid_from,
                 "valid_to": flyer.valid_to,
                 "parsed_time": flyer.parsed_time
