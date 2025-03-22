@@ -1,15 +1,16 @@
 from models.parser import FlyerParser
+from utils import save_flyers_to_json
+import time
 
 def main():
     print("Parsing started...")
-    parser = FlyerParser()
-    html_text = parser.fetch_html()
+    start_time = time.time()
 
-    hypermarket_names = parser.parse_hypermarket_names(html_text)
-    i=1
-    for hypermarket in hypermarket_names:
-        print(i, ".- ", hypermarket)
-        i+=1
+    save_flyers_to_json()
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time 
+    print(f"Parsing completed in {elapsed_time:.2f} seconds.")
 
 if __name__ == "__main__":
     main()
