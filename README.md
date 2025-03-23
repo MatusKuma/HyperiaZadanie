@@ -31,4 +31,3 @@ Flyer Parser je aplikácia na extrakciu informácií o letákoch z webovej strá
 4. Spusti script:
    ```bash
    python main.py
-
