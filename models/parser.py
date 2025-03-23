@@ -1,9 +1,13 @@
 import requests
+import logging
 from models.flyer import Flyer
 from typing import List, Dict, Optional
 from bs4 import BeautifulSoup, Tag
 from datetime import datetime
 import re
+
+# Nastavovanie logovania
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class FlyerParser:
     """
@@ -26,7 +30,7 @@ class FlyerParser:
             response.raise_for_status()
             return response.text
         except requests.RequestException as e:
-            print(f"Error fetching {endpoint}: {e}")
+            logging.error(f"Error fetching {endpoint}: {e}")
             return None
 
     def parse_hypermarket_names(self) -> Dict[str, str]:
@@ -90,6 +94,7 @@ class FlyerParser:
         try:
             description = html.find("div", class_="letak-description")
             if not description:
+                logging.warning("Description not found for flyer.")
                 return flyer
 
             flyer.thumbnail = self.extract_thumbnail(html)
@@ -104,7 +109,7 @@ class FlyerParser:
 
             flyer.set_parsed_time()
         except Exception as e:
-            print(f"Error parsing flyer: {e}")
+            logging.error(f"Error parsing flyer: {e}")
         return flyer
 
     def extract_thumbnail(self, html: Tag) -> str:

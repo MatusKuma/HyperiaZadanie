@@ -1,0 +1,78 @@
+2025-03-23 11:30:05,606 - INFO - Starting the application...
+2025-03-23 11:30:05,606 - INFO - Parsing started...
+2025-03-23 11:30:33,579 - INFO - Starting the application...
+2025-03-23 11:30:33,580 - INFO - Parsing started...
+2025-03-23 11:30:46,740 - INFO - Parsing completed in 13.16 seconds.
+2025-03-23 11:30:46,740 - INFO - AEZ : 1
+2025-03-23 11:30:46,740 - INFO - Aldi : 2
+2025-03-23 11:30:46,740 - INFO - Aldi Süd : 3
+2025-03-23 11:30:46,740 - INFO - Alnatura : 1
+2025-03-23 11:30:46,740 - INFO - Bofrost : 4
+2025-03-23 11:30:46,740 - INFO - CITTI Markt : 9
+2025-03-23 11:30:46,740 - INFO - Combi : 3
+2025-03-23 11:30:46,740 - INFO - Edeka : 16
+2025-03-23 11:30:46,740 - INFO - Edeka Struve : 1
+2025-03-23 11:30:46,740 - INFO - Edeka Zurheide : 1
+2025-03-23 11:30:46,741 - INFO - Famila : 1
+2025-03-23 11:30:46,741 - INFO - Famila Nordwest : 2
+2025-03-23 11:30:46,741 - INFO - Getränke Quelle : 1
+2025-03-23 11:30:46,741 - INFO - Getränkeland : 1
+2025-03-23 11:30:46,741 - INFO - Globus : 1
+2025-03-23 11:30:46,741 - INFO - HIT : 1
+2025-03-23 11:30:46,741 - INFO - HOL’AB! : 1
+2025-03-23 11:30:46,741 - INFO - Kaufland : 1
+2025-03-23 11:30:46,741 - INFO - KODi : 1
+2025-03-23 11:30:46,741 - INFO - KONSUM Leipzig : 1
+2025-03-23 11:30:46,741 - INFO - Mäc Geiz : 1
+2025-03-23 11:30:46,741 - INFO - Markant : 1
+2025-03-23 11:30:46,741 - INFO - Marktkauf : 5
+2025-03-23 11:30:46,741 - INFO - Metro : 6
+2025-03-23 11:30:46,741 - INFO - Mix Markt : 1
+2025-03-23 11:30:46,741 - INFO - nah & gut : 1
+2025-03-23 11:30:46,741 - INFO - Netto : 1
+2025-03-23 11:30:46,741 - INFO - Netto Marken-Discount : 5
+2025-03-23 11:30:46,741 - INFO - Norma : 5
+2025-03-23 11:30:46,741 - INFO - Rewe : 16
+2025-03-23 11:30:46,741 - INFO - Rewe ihr Kaufpark : 1
+2025-03-23 11:30:46,741 - INFO - Selgros : 11
+2025-03-23 11:30:46,741 - INFO - Spar Express : 1
+2025-03-23 11:30:46,741 - INFO - V-Markt : 6
+2025-03-23 11:30:46,741 - INFO - Wasgau : 1
+2025-03-23 11:32:48,829 - INFO - Starting the application...
+2025-03-23 11:32:48,829 - INFO - Parsing started...
+2025-03-23 11:33:02,676 - INFO - Parsing completed in 13.85 seconds.
+2025-03-23 11:33:02,676 - INFO - AEZ : 1
+2025-03-23 11:33:02,676 - INFO - Aldi : 2
+2025-03-23 11:33:02,676 - INFO - Aldi Süd : 3
+2025-03-23 11:33:02,677 - INFO - Alnatura : 1
+2025-03-23 11:33:02,677 - INFO - Bofrost : 4
+2025-03-23 11:33:02,677 - INFO - CITTI Markt : 9
+2025-03-23 11:33:02,677 - INFO - Combi : 3
+2025-03-23 11:33:02,677 - INFO - Edeka : 16
+2025-03-23 11:33:02,677 - INFO - Edeka Struve : 1
+2025-03-23 11:33:02,677 - INFO - Edeka Zurheide : 1
+2025-03-23 11:33:02,677 - INFO - Famila : 1
+2025-03-23 11:33:02,677 - INFO - Famila Nordwest : 2
+2025-03-23 11:33:02,677 - INFO - Getränke Quelle : 1
+2025-03-23 11:33:02,677 - INFO - Getränkeland : 1
+2025-03-23 11:33:02,677 - INFO - Globus : 1
+2025-03-23 11:33:02,677 - INFO - HIT : 1
+2025-03-23 11:33:02,677 - INFO - HOL’AB! : 1
+2025-03-23 11:33:02,677 - INFO - Kaufland : 1
+2025-03-23 11:33:02,677 - INFO - KODi : 1
+2025-03-23 11:33:02,677 - INFO - KONSUM Leipzig : 1
+2025-03-23 11:33:02,677 - INFO - Mäc Geiz : 1
+2025-03-23 11:33:02,677 - INFO - Markant : 1
+2025-03-23 11:33:02,677 - INFO - Marktkauf : 5
+2025-03-23 11:33:02,677 - INFO - Metro : 6
+2025-03-23 11:33:02,677 - INFO - Mix Markt : 1
+2025-03-23 11:33:02,677 - INFO - nah & gut : 1
+2025-03-23 11:33:02,677 - INFO - Netto : 1
+2025-03-23 11:33:02,677 - INFO - Netto Marken-Discount : 5
+2025-03-23 11:33:02,677 - INFO - Norma : 5
+2025-03-23 11:33:02,678 - INFO - Rewe : 16
+2025-03-23 11:33:02,678 - INFO - Rewe ihr Kaufpark : 1
+2025-03-23 11:33:02,678 - INFO - Selgros : 11
+2025-03-23 11:33:02,678 - INFO - Spar Express : 1
+2025-03-23 11:33:02,678 - INFO - V-Markt : 6
+2025-03-23 11:33:02,678 - INFO - Wasgau : 1
