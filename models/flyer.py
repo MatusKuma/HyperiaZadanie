@@ -1,21 +1,36 @@
-from dataclasses import dataclass
-import datetime
+from dataclasses import dataclass, field
+from datetime import datetime
+
 @dataclass
 class Flyer:
-    
-    def __init__(self, title, shop_name, thumbnail, valid_from, valid_to):
-        self.title = title
-        self.thumbnail = thumbnail
-        self.shop_name = shop_name
-        self.valid_from = valid_from
-        self.valid_to = valid_to
-        self.parsed_time = datetime.datetime.now()
+    """
+    Represents a flyer with relevant information.
 
+    Attributes:
+        shop_name (str): The name of the shop where the flyer is from.
+        title (str): The title of the flyer.
+        thumbnail (str): The URL of the thumbnail image for the flyer.
+        valid_from (str): The start date of validity for the flyer.
+        valid_to (str): The end date of validity for the flyer.
+        parsed_time (str): The time when the flyer was parsed.
+    """
     
-
-    title: str
-    thumbnail: str
     shop_name: str
-    valid_from: datetime
-    valid_to: datetime
-    parsed_time: datetime
+    title: str = field(default="")
+    thumbnail: str = field(default="")
+    valid_from: str = field(default="")
+    valid_to: str = field(default="")
+    parsed_time: str = field(default="")
+
+    def set_parsed_time(self):
+        """
+        Sets the parsed_time attribute to the current date and time.
+
+        This method formats the current date and time as a string
+        in the format 'YYYY-MM-DD HH:MM:SS' and assigns it to the
+        parsed_time attribute of the Flyer instance.
+
+        Returns:
+            None
+        """
+        self.parsed_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
