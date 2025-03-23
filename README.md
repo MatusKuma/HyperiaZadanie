@@ -18,4 +18,11 @@ Flyer Parser je aplikácia na extrakciu informácií o letákoch z webovej strá
 ## Inštalácia
 1. Klonuj tento repozitár:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/MatusKuma/HyperiaZadanie.git
+2. Prejdi do adresára projektu:
+   ```bash
+   cd ./HyperiaZadanie/
+
+3. Nainštaluj požadované knižnice:
+   ```bash
+   pip install -r requirements.txt
