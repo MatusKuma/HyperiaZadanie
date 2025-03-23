@@ -1,5 +1,5 @@
 from models.parser import FlyerParser
-from utils import save_flyers_to_json
+from utils.utils import save_flyers_to_json
 import time
 import logging
 import log_config

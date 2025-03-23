@@ -40,5 +40,5 @@ def save_flyers_to_json(all_flyers):
                 "parsed_time": flyer.parsed_time
             })
 
-    with open("flyers.json", "w", encoding="utf-8") as json_file:
+    with open("assets/flyers.json", "w", encoding="utf-8") as json_file:
         json.dump(output_flyers, json_file, ensure_ascii=False, indent=4)
