@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup, Tag
 from datetime import datetime
 import re
 
-# Nastavovanie logovania
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class FlyerParser:
